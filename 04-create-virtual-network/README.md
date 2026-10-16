@@ -1,4 +1,4 @@
-# Lab 04: Create a Virtual Network and Test VM-to-VM Connectivity
+# Lab 04 - Create a Virtual Network and Test VM-to-VM Connectivity
 
 ![Azure](https://img.shields.io/badge/Microsoft-Azure-0078D4?logo=microsoftazure&logoColor=white)
 ![Level](https://img.shields.io/badge/Level-Fundamental-green)
