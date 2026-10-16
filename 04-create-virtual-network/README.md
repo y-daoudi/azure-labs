@@ -185,6 +185,5 @@ Finally, I deleted every resource in the lab's resource group so nothing keeps r
 | Shared responsibility model | Azure secures the platform; I manage the OS firewall |
 | Cost management | Standard SSD, B-series VM, and resource deletion |
 
-**Also relevant for AZ-104:** VNet and subnet design, NSG rule priority, VM deployment, and connectivity troubleshooting.
-
+**Also relevant for AZ-104:** VNet and subnet design, NSG rule priority, VM deployment, and connectivity troubleshooting..
 ---
