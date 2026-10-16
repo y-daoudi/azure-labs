@@ -102,5 +102,3 @@ All resources (Web App and App Service plan) were deleted at the end of the lab 
 | Describe Azure management and governance | Monitoring metrics, cost awareness through cleanup |
 
 ---
-
-⬅️ [Back to all labs](../README.md)
