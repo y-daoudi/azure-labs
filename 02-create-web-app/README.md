@@ -87,11 +87,11 @@ I validated the lab successfully, then opened the resource group, selected all r
 - **The App Service plan is where cost lives.** The web app runs *on* the plan; the tier (Free, Basic, Standard, Premium) sets the CPU, memory, features, and price. One plan can host several apps.
 - **App names must be globally unique** because each one becomes a public `*.azurewebsites.net` subdomain.
 - **Monitoring is built in.** Without installing anything, the Overview page already shows HTTP errors, traffic, and response times. For deeper insight, **Application Insights** can be enabled.
-- **Path to automation:** App Service supports CI/CD from GitHub or Azure DevOps through the Deployment Center, so code changes can deploy automatically.
+- **Path to automation:** App Service supports CI/CD from GitHub or Azure DevOps through the Deployment Center, so code changes can deploy automatically..
 
 ## 🧹 Cleanup
 
-All resources (Web App and App Service plan) were deleted at the end of the lab to avoid charges..
+All resources (Web App and App Service plan) were deleted at the end of the lab to avoid charges.
 
 ## 📚 AZ-900 Exam Relevance
 
