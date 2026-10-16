@@ -60,7 +60,7 @@ flowchart LR
 
 After deployment, I opened the resource with **Go to resource**. The Overview page confirmed the app was **Running** on Windows, with the .NET v8.0 runtime, the Code publishing model, and one instance on the Basic (B1) plan.
 
-![Web App overview page](images/01-webapp-overview.png)
+![Web App overview page]
 *Web App overview: status Running, .NET 8 on Windows, Basic B1 plan in East US (subscription ID and IP addresses redacted).*
 
 I then opened the **Default domain** (`<app-name>.azurewebsites.net`) in a new browser tab, which displayed Azure's default page: *"Your web app is running and waiting for your content."* This confirmed the app was live and reachable over HTTPS.
