@@ -144,5 +144,3 @@ Opening RDP (3389) to the whole internet is fine for a temporary lab, but in a r
 | Cost management | Right-sizing and deleting resources after use |
 
 ---
-
-*Lab environment provided by Whizlabs hands-on labs. Write-up, screenshots, and notes are my own. Completed September 2026.*
