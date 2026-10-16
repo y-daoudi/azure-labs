@@ -130,7 +130,7 @@ Opening RDP (3389) to the whole internet is fine for a temporary lab, but in a r
 - **VM size** and **disk type** directly drive cost and performance, and B-series is a good fit for low, bursty workloads.
 - **Snapshots** provide a fast, low-cost way to capture a disk's state before risky changes. Incremental snapshots save storage.
 - **Resource groups** make cleanup simple: deleting the resources in one group removes the entire environment.
-- The Azure Portal shows helpful security warnings, and reading them is part of good cloud practice.
+- The Azure Portal shows helpful security warnings, and reading them is part of good cloud practice..
 
 ## 🎓 AZ-900 Concepts Reinforced
 
