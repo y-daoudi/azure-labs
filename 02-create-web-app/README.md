@@ -91,7 +91,7 @@ I validated the lab successfully, then opened the resource group, selected all r
 
 ## 🧹 Cleanup
 
-All resources (Web App and App Service plan) were deleted at the end of the lab to avoid charges.
+All resources (Web App and App Service plan) were deleted at the end of the lab to avoid charges..
 
 ## 📚 AZ-900 Exam Relevance
 
