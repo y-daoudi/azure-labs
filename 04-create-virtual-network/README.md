@@ -80,36 +80,31 @@ flowchart LR
 
 I searched for **Virtual networks** in the portal, selected **+ Create**, chose the lab's resource group, named the network `vnet1`, and set the region to East US.
 
-![VNet basics](images/01-vnet-basics.png)
+
 
 On the **IP addresses** tab I kept the default `10.0.0.0/16` address space and added a subnet called `default2` with the range `10.0.1.0/24`.
 
-![Subnet configuration](images/02-subnet-configuration.png)
 
 After **Review + create**, the deployment finished successfully.
 
-![VNet deployment complete](images/03-vnet-deployment-complete.png)
+
 
 ### 2. Deploy two virtual machines
 
 I created `vm1` with the Windows Server 2025 image, size B2s, a Standard SSD OS disk, and the inbound ports RDP/HTTP/SSH allowed.
 
-![vm1 basics](images/04-vm1-basics.png)
 
 On the **Networking** tab I attached it to `vnet1` and the `default2` subnet. I also disabled boot diagnostics on the Monitoring tab.
 
-![vm1 networking](images/05-vm1-networking.png)
 
 I repeated the same process for `vm2`, using the same VNet and subnet. Both VMs ended up in the **Running** state.
 
-![Both VMs running](images/06-vms-running.png)
+
 
 ### 3. Allow ICMP in the Network Security Group
 
 On `vm2`, under **Network settings**, I added an inbound port rule: protocol **ICMP**, action **Allow**, priority **350**, name `ICMP`.
 
-![vm2 network settings](images/07-vm2-network-settings.png)
-![ICMP inbound rule](images/08-nsg-icmp-rule.png)
 
 ### 4. Connect with RDP and open the Windows firewall for ICMP
 
@@ -117,7 +112,6 @@ I downloaded the RDP file from the **Connect** page of each VM and signed in wit
 
 Inside `vm2`, I opened **Windows Defender Firewall with Advanced Security**, went to **Inbound Rules**, and enabled the *File and Printer Sharing (Echo Request - ICMPv4-In)* rules.
 
-![Windows Firewall ICMP rules](images/09-windows-firewall-icmp.png)
 
 ### 5. Test the connection
 
@@ -125,21 +119,21 @@ From PowerShell (run as Administrator) on `vm1`, I ran `nslookup vm2` and `ping 
 
 My first attempt failed: DNS worked, but every ping timed out.
 
-![Ping failed, nslookup worked](images/10-ping-failed-nslookup-ok.png)
+
 
 After fixing the problem on `vm2` (explained below), the ping succeeded with 0% packet loss.
 
-![Ping successful](images/11-ping-success.png)
+
 
 ### 6. Validate and clean up
 
 I ran the lab validation and it confirmed a successful result.
 
-![Lab validation passed](images/12-validation-passed.png)
+
 
 Finally, I deleted every resource in the lab's resource group so nothing keeps running or costing money.
 
-![Resources deleted](images/13-resources-deleted.png)
+
 
 ## Troubleshooting: Ping "Request timed out"
 
@@ -194,5 +188,3 @@ Finally, I deleted every resource in the lab's resource group so nothing keeps r
 **Also relevant for AZ-104:** VNet and subnet design, NSG rule priority, VM deployment, and connectivity troubleshooting.
 
 ---
-
-*Lab environment provided by [Whizlabs](https://www.whizlabs.com/). This write-up is my own documentation of the work I completed.*
