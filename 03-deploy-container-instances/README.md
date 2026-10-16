@@ -139,5 +139,3 @@ The container instance was deleted at the end of the lab, and deletion was confi
 | Describe Azure management and governance | Azure CLI, Cloud Shell, monitoring metrics, cost control through cleanup |
 
 ---
-
-⬅️ [Back to all labs](../README.md)
