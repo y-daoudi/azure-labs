@@ -124,7 +124,7 @@ az container delete --resource-group <resource-group-name> --name yahya --yes
 - **Azure CLI makes deployments repeatable.** One command replaced several Portal screens, and the same command can go into a script or a CI/CD pipeline.
 - **DNS labels must be unique per region**, because they form a public hostname.
 - **Where ACI fits:** great for simple, single-container workloads. For many containers with scaling, service discovery, and rolling updates, **Azure Kubernetes Service (AKS)** or **Azure Container Apps** are the better choices.
-- **Compute options compared so far:** VM (IaaS, full control) → App Service (PaaS, code-focused) → Container Instances (serverless containers, image-focused).
+- **Compute options compared so far:** VM (IaaS, full control) → App Service (PaaS, code-focused) → Container Instances (serverless containers, image-focused)..
 
 ## 🧹 Cleanup
 
